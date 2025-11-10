@@ -1,0 +1,55 @@
+import type { Theme } from './types';
+import { BirthdayIcon, ChristmasIcon, NewYearIcon, ValentineIcon, CongratsIcon } from './components/icons/ThemeIcons';
+
+export const THEMES: Theme[] = [
+  {
+    id: 'birthday',
+    name: 'Birthday',
+    icon: BirthdayIcon,
+    gradient: 'from-yellow-400 via-red-500 to-pink-500',
+    textColor: 'text-white',
+    greeting: (receiverName) => `Happy Birthday ${receiverName}!`,
+    musicSrc: 'https://cdn.pixabay.com/audio/2022/08/24/audio_33c63d4153.mp3',
+    ogImage: 'https://picsum.photos/seed/birthday-card/600/315',
+  },
+  {
+    id: 'christmas',
+    name: 'Christmas',
+    icon: ChristmasIcon,
+    gradient: 'from-red-600 to-green-600',
+    textColor: 'text-white',
+    greeting: (receiverName) => `Merry Christmas ${receiverName}!`,
+    musicSrc: 'https://cdn.pixabay.com/audio/2023/11/22/audio_304a23b618.mp3',
+    ogImage: 'https://picsum.photos/seed/christmas-card/600/315',
+  },
+  {
+    id: 'new-year',
+    name: 'New Year',
+    icon: NewYearIcon,
+    gradient: 'from-blue-800 via-purple-700 to-indigo-900',
+    textColor: 'text-yellow-300',
+    greeting: (receiverName) => `Happy New Year, ${receiverName}!`,
+    musicSrc: 'https://cdn.pixabay.com/audio/2021/12/31/audio_auld-lang-syne-instrumental-13220.mp3',
+    ogImage: 'https://picsum.photos/seed/newyear-card/600/315',
+  },
+  {
+    id: 'valentine',
+    name: 'Valentine',
+    icon: ValentineIcon,
+    gradient: 'from-pink-500 to-rose-500',
+    textColor: 'text-white',
+    greeting: (receiverName) => `Happy Valentine's Day, ${receiverName}!`,
+    musicSrc: 'https://cdn.pixabay.com/audio/2022/02/14/audio_304816999a.mp3',
+    ogImage: 'https://picsum.photos/seed/valentine-card/600/315',
+  },
+  {
+    id: 'congrats',
+    name: 'Congrats',
+    icon: CongratsIcon,
+    gradient: 'from-teal-400 to-blue-500',
+    textColor: 'text-white',
+    greeting: (receiverName) => `Congratulations, ${receiverName}!`,
+    musicSrc: 'https://cdn.pixabay.com/audio/2022/01/18/audio_a85b651061.mp3',
+    ogImage: 'https://picsum.photos/seed/congrats-card/600/315',
+  },
+];
